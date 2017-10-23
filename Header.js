@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
   	console.log('items', this.props.items);
     return (
-      <div>
+      <div class="container">
       {this.props.items.map((item, index) =>
       	<a href={item.link} key={index}>{item.label}</a>
       	)}
